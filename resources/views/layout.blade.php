@@ -10,7 +10,7 @@
 
         @livewireStyles
     </head>
-    <body class="antialiased">
+    <body class="antialiased bg-light">
         @yield('content')
 
         @livewireScripts

@@ -2,8 +2,8 @@
 
 @section('content')
 
-	<div class="container">
-		<h1>Hola, Livewire</h1>
+	<div class="container my-4">
+		@livewire('task-component')
 	</div>
 
 @endsection
