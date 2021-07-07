@@ -10,6 +10,8 @@ class PostComponent extends Component
 {
     use WithPagination;
 
+    protected $paginationTheme = 'bootstrap';
+
     public $post_id, $title, $body;
     public $view = 'create';
 

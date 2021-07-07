@@ -30,4 +30,4 @@
 	</tbody>
 </table>
 
-{{ $posts->links('pagination::bootstrap-4') }}
+{{ $posts->links() }}
