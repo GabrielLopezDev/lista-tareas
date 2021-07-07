@@ -2,6 +2,6 @@
 
 @include('livewire.form')
 
-<button wire:click="store" class="btn btn-primary">
+<button wire:click="store" class="btn btn-sm btn-primary mt-2">
 	Guardar
 </button>

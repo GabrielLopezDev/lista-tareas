@@ -31,6 +31,9 @@ class PostComponent extends Component
             'title' => $this->title,
             'body'  => $this->body,
         ]);
+
+        $this->title = '';
+        $this->body  = '';
     }
 
     public function destroy($id)
