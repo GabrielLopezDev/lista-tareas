@@ -1,6 +1,6 @@
 <h2>Listado de Posts</h2>
 
-<table class="table">
+<table class="table table-light">
 	<thead>
 		<tr>
 			<th>ID</th>
@@ -21,7 +21,7 @@
 					</button>
 				</td>
 				<td>
-					<button class="btn btn-sm btn-danger">
+					<button wire:click="destroy({{ $post->id }})" class="btn btn-sm btn-danger">
 						Eliminar
 					</button>
 				</td>
