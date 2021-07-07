@@ -7,7 +7,7 @@
 </div>
 
 <div class="form-group mt-3">
-	<label>Contenido</label>
+	<label>Descripción</label>
 	<textarea class="form-control" wire:model="body"></textarea>
 	@error('body')
 		<span>{{ $message }}</span>

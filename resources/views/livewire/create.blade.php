@@ -1,4 +1,4 @@
-<h2 class="mt-3">Nuevo Post</h2>
+<h2 class="mt-3">Nueva Tarea</h2>
 
 @include('livewire.form')
 

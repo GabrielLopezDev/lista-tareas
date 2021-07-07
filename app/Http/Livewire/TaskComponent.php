@@ -2,23 +2,23 @@
 
 namespace App\Http\Livewire;
 
-use App\Models\Post;
+use App\Models\Task;
 use Livewire\Component;
 use Livewire\WithPagination;
 
-class PostComponent extends Component
+class TaskComponent extends Component
 {
     use WithPagination;
 
     protected $paginationTheme = 'bootstrap';
 
-    public $post_id, $title, $body;
+    public $task_id, $title, $body;
     public $view = 'create';
 
     public function render()
     {
-        return view('livewire.post-component', [
-            'posts' => Post::orderBy('id', 'desc')->paginate(8)
+        return view('livewire.task-component', [
+            'tasks' => Task::orderBy('id', 'desc')->paginate(8)
         ]);
     }
 
@@ -29,7 +29,7 @@ class PostComponent extends Component
             'body'  => 'required',
         ]);
 
-        Post::create([
+        Task::create([
             'title' => $this->title,
             'body'  => $this->body,
         ]);
@@ -40,11 +40,11 @@ class PostComponent extends Component
 
     public function edit($id)
     {
-        $post = Post::find($id);
+        $task = Task::find($id);
 
-        $this->post_id = $post->id;
-        $this->title   = $post->title;
-        $this->body    = $post->body;
+        $this->task_id = $task->id;
+        $this->title   = $task->title;
+        $this->body    = $task->body;
 
         $this->view  = 'edit';
     }
@@ -56,9 +56,9 @@ class PostComponent extends Component
             'body'  => 'required',
         ]);
 
-        $post = Post::find($this->post_id);
+        $task = Task::find($this->task_id);
 
-        $post->update([
+        $task->update([
             'title' => $this->title,
             'body'  => $this->body,
         ]);
@@ -68,7 +68,7 @@ class PostComponent extends Component
 
     public function destroy($id)
     {
-        Post::destroy($id);
+        Task::destroy($id);
     }
 
     public function default()
