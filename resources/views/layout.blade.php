@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Livewire</title>
+        <title>Livewire - Lista de Tareas</title>
 
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
