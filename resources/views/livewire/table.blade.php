@@ -1,4 +1,4 @@
-<h2>Listado de Posts</h2>
+<h2 class="mt-3">Listado de Posts</h2>
 
 <table class="table table-light">
 	<thead>

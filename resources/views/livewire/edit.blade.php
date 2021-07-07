@@ -1,11 +1,11 @@
-<h2>Editar Post</h2>
+<h2 class="mt-3">Editar Post</h2>
 
 @include('livewire.form')
 
-<button wire:click="update" class="btn btn-sm btn-primary mt-2">
+<button wire:click="update" class="btn btn-sm btn-primary mt-3">
 	Actualizar
 </button>
 
-<button wire:click="default" class="btn btn-sm btn-outline-secondary mt-2">
+<button wire:click="default" class="btn btn-sm btn-outline-light mt-3">
 	Cancelar
 </button>

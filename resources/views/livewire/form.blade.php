@@ -1,4 +1,4 @@
-<div class="form-group">
+<div class="form-group mt-2">
 	<label>Título</label>
 	<input class="form-control" type="text" wire:model="title">
 	@error('title')
@@ -6,7 +6,7 @@
 	@enderror
 </div>
 
-<div class="form-group">
+<div class="form-group mt-3">
 	<label>Contenido</label>
 	<textarea class="form-control" wire:model="body"></textarea>
 	@error('body')
