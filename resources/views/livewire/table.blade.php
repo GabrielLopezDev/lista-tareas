@@ -16,7 +16,7 @@
 				<td>{{ $post->title }}</td>
 				<td>{{ $post->body }}</td>
 				<td>
-					<button class="btn btn-sm btn-primary">
+					<button wire:click="edit({{ $post->id }})" class="btn btn-sm btn-primary">
 						Editar
 					</button>
 				</td>
